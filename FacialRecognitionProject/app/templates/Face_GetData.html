@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>FacialRecognition</title>
+    <title>Face_GetData</title>
     <link rel="stylesheet" href='../static/style.css'/>
     <style>
     body {
@@ -10,11 +10,19 @@
   </head>
   <body>
     <h1>Face_GetData</h1>
-    <h3>{{time}}</h3>
+    <h2>{{time}}</h2>
     <hr>
-    <h3>Run ==> <a href="/Get"  class='button'>Run</a></h3>
+    <h3><img src="{{ url_for('video_feed') }}" width="50%"></h3>
     <hr>
-    <h3> Return to main page ==> <a href="/"class="button">Return</a></h3>
+    <form>
+      <input type="text" name="userid" placeholder="userid"/>
+      <br/>
+      <input type="text" name="username" placeholder="username"/>
+      <br/>
+    </form>
+    <h4>Run ==> <a href="/Get"  class='button'>Run</a></h4>
+    <hr>
+    <h5> Return to main page ==> <a href="/"class="button">Return</a></h5>
     <hr>
   </body>
 </html>

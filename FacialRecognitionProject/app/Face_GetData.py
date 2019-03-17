@@ -8,7 +8,7 @@ cam.set(4, 480) # set video height
 face_detector = cv2.CascadeClassifier('frontalface_default.xml')
 
 # For each person, enter one numeric face id
-face_id = input('\n enter user id end press <return> ==> ')
+# face_id = input('\n enter user id end press <return> ==> ')
 
 print("\n [INFO] Initializing face capture. Look the camera and wait ...")
 # Initialize individual sampling face count
@@ -39,3 +39,4 @@ while(True):
 print("\n [INFO] Exiting Program and cleanup staff")
 cam.release()
 cv2.destroyAllWindows()
+
