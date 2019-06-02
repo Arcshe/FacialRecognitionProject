@@ -31,7 +31,7 @@ class ImageProcessor(threading.Thread):
 
 def streams():
     while not done:
-        wth lock:
+        with lock:
             if pool:
                 processor = pool.pop()
             else:
